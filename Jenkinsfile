@@ -40,14 +40,14 @@ pipeline {
 
         stage('Docker Push'){
             steps {
-                sh 'docker push pritisingh/docker-demo-app:${BUILD_NUMBER}'
+                sh 'docker push pritisinghlal/docker-demo-app:${BUILD_NUMBER}'
             }
         }
         
         stage('Docker deploy'){
             steps {
                
-                sh 'docker run -itd -p  8080:8080 pritisingh/docker-demo-app:${BUILD_NUMBER}'
+                sh 'docker run -itd -p  8080:8080 pritisinghlal/docker-demo-app:${BUILD_NUMBER}'
             }
         }
 
