@@ -10,6 +10,7 @@ public class DockerSpringbootHelloApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DockerSpringbootHelloApplication.class, args);
+		System.out.println("Hello");
 	}
 
 }
